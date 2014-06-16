@@ -1,0 +1,98 @@
+@import 'bootstrap/bootstrap.less';
+
+
+/**
+*
+* Boostrap Variable Overrides
+*
+**/
+
+@font-size-base:          20px;
+
+
+
+
+
+
+
+/**
+*
+* Layout Variables
+*
+**/
+
+@sidebar-width: 300px;
+@sidebar-padding: 30px;
+@sidebar-bg: #111;
+@sidebar-color: #eee;
+@sidebar-font-size: 16px;
+
+@content-padding:60px;
+@content-max-width: none;
+@content-bg:none;
+
+
+
+
+/**
+*
+* Layout
+*
+**/
+
+
+html,body{
+	height:100%;
+}
+
+
+.l-full-height{
+	min-height:100%;
+}
+
+.l-table{
+	display:table;
+	width:100%;
+
+	> *{
+		display:table-cell;
+	}
+}
+
+
+.l-sidebar{
+	width:@sidebar-width;
+	min-width:@sidebar-width;
+	padding:@sidebar-padding;
+}
+
+.l-content{
+	margin:0 auto;
+	max-width: @content-max-width;
+	padding:@content-padding;
+}
+
+
+
+
+
+/**
+*
+* Theme
+*
+**/
+
+.l-sidebar{
+	background:@sidebar-bg;
+	color:@sidebar-color;
+	font-size:@sidebar-font-size;
+}
+
+.l-content{
+	background:@content-bg;
+}
+
+
+
+
+
